@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    images: { remotePatterns: [{ protocol: 'https', hostname: 'shdw-drive.genesysgo.net' }] }
+}
 
 module.exports = nextConfig

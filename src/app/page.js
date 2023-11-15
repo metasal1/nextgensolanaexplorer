@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import dynamic from 'next/dynamic'
+import { LogoutBtn } from './_lib/LogoutButton'
 
 const HankoAuth = dynamic(() => import('./_lib/HankoAuth'), { ssr: false })
 
@@ -34,6 +35,7 @@ export default function Home() {
       <div className={styles.grid}>
         <HankoAuth />
       </div>
+      <LogoutBtn />
     </main>
   )
 }

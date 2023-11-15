@@ -19,5 +19,5 @@ export async function middleware(req) {
 }
 
 export const config = {
-    matcher: ["/:path*"],
+    matcher: ["/dashboard/:path*", "/domain/:path*", "/tokens", "/wallet/:path*"],
 };

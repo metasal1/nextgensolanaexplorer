@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import styles from '../../page.module.css'
-import getTx from '../../getTx'
+import getTx from '../../_lib/getTx'
 
 export default async function Address({ params }) {
 
